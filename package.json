@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "android": "^0.0.8",
+    "scripts": "^0.1.0"
+  }
+}

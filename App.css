@@ -1,0 +1,278 @@
+/*-------------root elements---------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+button{
+
+}
+
+a{
+  list-style: none;
+  color: black;
+  text-decoration: none;
+}
+
+h1{
+  margin: 0;
+  font-size: 50px;
+}
+
+body{
+margin: 0;
+padding: 0;
+background: linear-gradient();
+background-position: center;
+background-repeat:no-repeat;
+background-size: cover;
+}
+
+footer{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/*-----------Root End--------*/
+
+
+
+.App {
+  text-align: center;
+}
+
+.topnav {
+  background: linear-gradient(to bottom,white, rgba(0, 0, 0, 0));
+  overflow: hidden;
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  border: none;  
+  position: static;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.App-header {
+  background-image: url(D:\Git-github\my-app\public\Assets\134a2e8f2720a408ce8be74e17552fb3.jpg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.App-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  
+}
+
+
+
+.App-body input{
+  border-radius: 10px;
+  height: 50px;
+  display:flex;
+  border-color: none;
+  border-style: none;
+  justify-content: center;
+  opacity: 0.6;
+  transition: 0.3s;
+  
+}
+
+.App-body input:hover{
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.App-form{
+  display: grid;
+  margin: 0;
+  padding: 50px;
+  position: relative;
+  border-radius: 1% 10%;
+  border-color: none;
+  background-color: rgba(240, 248, 255, 0.445);
+}
+
+
+.App-form input::placeholder{
+  font-size: 20px;
+  
+  font-size: 15px;
+  display: flex;
+  font-family: 'coolvetica';
+  text-align: center;
+
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  text-align: center;
+  opacity: 1;
+}
+
+
+.App-body label{
+  font-family: 'coolvetica';
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+
+.App-form button{
+  border-radius: 10px;
+  height: 50px;
+  font-size: 15px;
+  font-family: 'coolvetica';
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-style: none;
+  opacity: 0.6;
+  transition: 0.3s;
+  
+}
+
+.App-form button:hover{
+  opacity:1;
+  cursor: pointer;
+}
+
+.App-form button:hover:active{
+
+    opacity:0.5;
+    transform: perspective(1.0);
+      -xpedu-transform: scale(1.3);
+        -ms-transform: scale(1);
+        transform: scale(1.1);
+        
+ 
+
+  }
+
+.forgot-pswd{
+  font-family: 'coolvetica';
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+}
+
+.forgot-pswd a{
+  font-family: 'sans-serif';
+  font-size: 10px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  text-decoration: underline;
+  padding-top: 5px;
+}
+
+.forgot-pswd li{
+  list-style: none;
+  padding: 5px;
+}
+
+.side-login{
+  display: flex;
+  background-color: white;
+  padding: 50px;
+  width: 50px;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: left;
+}
+  
+
+
+.footer-info{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 30px;
+  
+}
+
+.footer-info p{
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.footer-info  ul{
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10px;
+  list-style: none;
+  width: 100%;
+}
+
+/*--------End Content--------*/
+
+
+
+
+
+/*---------Webkits ---------*/
+@-webkit-keyframes scale {
+  0%   { transform: scale(0.5,0.5); }
+  100% { transform: scale(1,1); }
+}
+@-moz-keyframes scale {
+  0%   { transform: scale(0.5,0.5); }
+  100% { transform: scale(1,1); }
+}
+@-o-keyframes scale {
+  0%   { transform: scale(0.5,0.5); }
+  100% { transform: scale(1,1); }
+}
+@keyframes scale {
+  0%   { transform: scale(0.5,0.5); }
+  100% { transform: scale(1,1); }
+}
+
+
+
+.App {
+ animation-name: scale;
+ animation-duration: 0.2s; 
+ animation-fill-mode: forwards; 
+}
